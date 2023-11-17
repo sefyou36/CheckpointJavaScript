@@ -131,3 +131,16 @@ function booWho(bool) {
       }
       
       titleCase("sHoRt AnD sToUt");
+
+
+    //   Slice and Splice
+    
+      function frankenSplice(arr1, arr2, n) {
+        let arr2C = arr2.slice();
+        
+        arr2C.splice(n,0,...arr1)
+        console.log(arr2C)
+        return arr2C;
+      }
+      
+      frankenSplice([1, 2, 3], [4, 5, 6], 1);
